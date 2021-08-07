@@ -1,7 +1,11 @@
 import cmath
 
-phi = abs(complex(1, 2))
-z = cmath.phase(complex(1, 2))
+z = complex(input())
+x = z.real
+y = z.imag
+
+phi = abs(complex(x, y))
+r = cmath.phase(z)
 
 print(phi)
-print(z)
+print(r)
